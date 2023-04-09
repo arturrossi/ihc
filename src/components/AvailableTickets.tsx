@@ -45,10 +45,6 @@ export default function AvailableTickets({ eventId }: { eventId: number }) {
         router.push(`/checkout?tickets=${JSON.stringify(quantity)}&eventId=${eventId}`)
     }
 
-    const goToSellerPage = (sellerId: string) => {
-        router.push(`/seller/${sellerId}`)
-    }
-
     return (
         <div>
             {Object.keys(groupedData).map((key) =>
