@@ -57,7 +57,7 @@ export default function TicketsPage() {
                                 </div>
                                 <label className="font-bold text-2xl text-purple-900">Ingressos</label>
                                 {boughtTicket.tickets.map((ticket: any) => ((
-                                    <div className="flex flex-col space-y-2 pb-4">
+                                    <div key={ticket.id} className="flex flex-col space-y-2 pb-4">
                                         <div className="flex flex-col">
                                             <label className="text-sm text-gray-500 font-semibold">Setor</label>
                                             <label className="font-semibold text-gray-800 capitalize">{ticket.sector}</label>
