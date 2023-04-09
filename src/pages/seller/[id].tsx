@@ -65,7 +65,7 @@ export default function EventPage() {
                                     {seller.reviewStars}
                                 </div>
                                 {seller.reviews?.map(review => (
-                                    <div className="mt-4 bg-gray-100 space-y-3 shadow-sm p-4 rounded-xl border border-gray-100 flex flex-col">
+                                    <div key={review.name} className="mt-4 bg-gray-100 space-y-3 shadow-sm p-4 rounded-xl border border-gray-100 flex flex-col">
                                         <div className="flex flex-col">
                                             <label className="text-gray-500 text-sm">Avaliador</label>
                                             <label className="text-gray-800 font-medium">{review.name}</label>
