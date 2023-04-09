@@ -61,7 +61,11 @@ export default function AvailableTickets({ eventId }: { eventId: number }) {
                                 <div>
                                     <div className="flex mb-2">
                                         <label className="mr-auto font-semibold text-gray-400 text-sm">Vendedor</label>
-                                        <label onClick={() => goToSellerPage(ticket.seller.id)} className="ml-auto text-purple-900 text-sm">Ver detalhes</label>
+                                        <label
+                                            onClick={() => goToSellerPage(ticket.seller.id)}
+                                            className="py-1 px-2 font-semibold cursor-pointer bg-purple-900 text-white ml-auto rounded-xl text-sm">
+                                            Ver detalhes
+                                        </label>
                                     </div>
                                     <div className="flex">
                                         <label>{ticket.seller.name}</label>

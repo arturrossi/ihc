@@ -30,7 +30,7 @@ export default function EventPage() {
                     <BackHeader />
                     <div className='bg-white p-8 xl:px-24 flex flex-col space-y-6'>
                         <SearchInput />
-                        <Image
+                        <img
                             src={event.imageSrc}
                             alt={event.description ?? ''}
                             className="rounded-xl w-full h-full object-center object-cover group-hover:opacity-75"
