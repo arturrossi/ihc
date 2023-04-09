@@ -10,22 +10,10 @@ export default function TicketsPage() {
     const [boughtTickets, setBoughtTickets] = useState([])
 
     const router = useRouter()
-
-    const goToFinishCheckoutPage = () => {
-        let boughtTickets = JSON.parse(localStorage.getItem('boughtTickets') ?? '[]')
-
-        boughtTickets.push({ tickets: router.query.tickets, eventId: router.query.eventId })
-
-        localStorage.setItem('boughtTickets', JSON.stringify(boughtTickets))
-
-        router.push('/success')
-    }
-
+    
     useEffect(() => {
         setBoughtTickets(JSON.parse(localStorage.getItem('boughtTickets') ?? '[]'))
     }, [])
-
-    console.log(boughtTickets)
 
     return (
         <>
