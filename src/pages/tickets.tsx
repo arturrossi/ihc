@@ -37,10 +37,10 @@ export default function TicketsPage() {
             <main>
                 <div className="pb-16">
                     <BackHeader />
-                    <div className='bg-white p-8 flex flex-col space-y-6'>
+                    <div className='bg-white p-8 xl:px-24 flex flex-col space-y-6'>
                         <label className="font-bold text-2xl text-purple-900">Ingressos comprados</label>
                         {boughtTickets.map((boughtTicket: any) =>
-                            <>
+                            <div className="border-b space-y-4">
                                 <label className="font-bold text-2xl text-purple-900">Dados do evento</label>
                                 <div className="flex flex-col">
                                     <label className="text-sm text-gray-500 font-semibold">Evento</label>
@@ -69,7 +69,7 @@ export default function TicketsPage() {
                                 </div>
                                 <label className="font-bold text-2xl text-purple-900">Ingressos</label>
                                 {boughtTicket.tickets.map((ticket: any) => ((
-                                    <div className="flex flex-col space-y-2 border-separate border-b pb-4">
+                                    <div className="flex flex-col space-y-2 pb-4">
                                         <div className="flex flex-col">
                                             <label className="text-sm text-gray-500 font-semibold">Setor</label>
                                             <label className="font-semibold text-gray-800 capitalize">{ticket.sector}</label>
@@ -88,7 +88,7 @@ export default function TicketsPage() {
                                         </div>
                                     </div>
                                 )))}
-                            </>
+                            </div>
                         )}
                     </div>
                     <Navbar />

@@ -66,7 +66,7 @@ export default function CheckoutPage() {
             <main>
                 <div className="pb-16">
                     <BackHeader />
-                    <div className='bg-white p-8 flex flex-col space-y-6'>
+                    <div className='bg-white p-8 xl:px-24 flex flex-col space-y-6'>
                         <label className="font-bold text-2xl text-purple-900">Ingressos escolhidos</label>
                         {allTickets.map(ticket => (
                             <div className="flex flex-col space-y-2 border-separate border-b pb-4">

@@ -1,5 +1,3 @@
-import { faker } from '@faker-js/faker'
-
 export const availableTickets = [
     {
         eventId: 1,
@@ -7,8 +5,9 @@ export const availableTickets = [
             {
                 id: 1,
                 seller: {
-                    name: faker.name.fullName(),
-                    reviewStars: Math.floor(Math.random() * (5 - 3 + 1) + 3)
+                    id: 1,
+                    name: 'Payton Wunsch',
+                    reviewStars: 5
                 },
                 price: 50,
                 sector: 'superior'
@@ -16,8 +15,9 @@ export const availableTickets = [
             {
                 id: 2,
                 seller: {
-                    name: faker.name.fullName(),
-                    reviewStars: Math.floor(Math.random() * (5 - 3 + 1) + 3)
+                    id: 2,
+                    name: 'Katherine Treutel',
+                    reviewStars: 4
                 },
                 price: 50,
                 sector: 'superior'
@@ -25,8 +25,9 @@ export const availableTickets = [
             {
                 id: 3,
                 seller: {
-                    name: faker.name.fullName(),
-                    reviewStars: Math.floor(Math.random() * (5 - 3 + 1) + 3)
+                    id: 3,
+                    name: 'Weston McDermott',
+                    reviewStars: 4
                 },
                 price: 50,
                 sector: 'superior'
@@ -34,8 +35,9 @@ export const availableTickets = [
             {
                 id: 4,
                 seller: {
-                    name: faker.name.fullName(),
-                    reviewStars: Math.floor(Math.random() * (5 - 3 + 1) + 3)
+                    id: 4,
+                    name: 'Janelle Swaniawski',
+                    reviewStars: 1
                 },
                 price: 30,
                 sector: 'inferior'
@@ -43,8 +45,9 @@ export const availableTickets = [
             {
                 id: 5,
                 seller: {
-                    name: faker.name.fullName(),
-                    reviewStars: Math.floor(Math.random() * (5 - 3 + 1) + 3)
+                    id: 5,
+                    name: 'Vella Zieme',
+                    reviewStars: 2
                 },
                 price: 35,
                 sector: 'inferior'
@@ -52,8 +55,9 @@ export const availableTickets = [
             {
                 id: 6,
                 seller: {
-                    name: faker.name.fullName(),
-                    reviewStars: Math.floor(Math.random() * (5 - 3 + 1) + 3)
+                    id: 6,
+                    name: 'Domenica Langworth',
+                    reviewStars: 5
                 },
                 price: 30,
                 sector: 'inferior'

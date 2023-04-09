@@ -16,7 +16,7 @@ export default function SuccessPage() {
             <main className="h-screen">
                 <div className="pb-16 h-full">
                     <BackHeader />
-                    <div className='bg-white h-full p-8 flex flex-col space-y-6'>
+                    <div className='bg-white h-full p-8 xl:px-24 flex flex-col space-y-6'>
                         <label className="font-bold text-2xl text-purple-900">Parabéns!</label>
                         <label className="font-bold text-2xl text-purple-900">Sua compra foi realizada com sucesso</label>
                         <div onClick={() => router.push('/tickets')} className="cursor-pointer bg-purple-900 text-white rounded-xl p-4 flex items-center justify-center">

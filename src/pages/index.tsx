@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className='bg-white p-8 flex flex-col space-y-6'>
+        <div className='bg-white p-8 xl:px-24 flex flex-col space-y-6'>
           <h3 className='text-3xl font-bold text-violet-900'>Bem-vindo!</h3>
           <SearchInput />
           <div>

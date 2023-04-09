@@ -27,7 +27,7 @@ export default function EventPage() {
             <main>
                 <div className="pb-16">
                     <BackHeader />
-                    <div className='bg-white p-8 flex flex-col space-y-6'>
+                    <div className='bg-white p-8 xl:px-24 flex flex-col space-y-6'>
                         <SearchInput />
                         <img
                             src={event.imageSrc}
