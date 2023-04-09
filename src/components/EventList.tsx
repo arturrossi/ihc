@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function EventList({ events }: { events: any[] }) {
     return (
         <div>
@@ -7,7 +9,7 @@ export default function EventList({ events }: { events: any[] }) {
                     {events.map((event) => (
                         <a key={event.id} href={'/event/' + event.id} className="group">
                             <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                                <img
+                                <Image
                                     src={event.imageSrc}
                                     alt={event.imageAlt}
                                     className="w-full h-full object-center object-cover group-hover:opacity-75"

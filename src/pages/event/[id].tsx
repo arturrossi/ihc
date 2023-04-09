@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar'
 import AvailableTickets from '@/components/AvailableTickets'
 import { CalendarIcon, ClockIcon, MapPinIcon } from '@heroicons/react/24/solid'
 import BackHeader from "@/components/BackHeader"
+import Image from "next/image"
 
 export default function EventPage() {
     const router = useRouter()
@@ -29,8 +30,9 @@ export default function EventPage() {
                     <BackHeader />
                     <div className='bg-white p-8 xl:px-24 flex flex-col space-y-6'>
                         <SearchInput />
-                        <img
+                        <Image
                             src={event.imageSrc}
+                            alt={event.description ?? ''}
                             className="rounded-xl w-full h-full object-center object-cover group-hover:opacity-75"
                         />
                         <div className="text-gray-800 flex flex-col space-y-3">

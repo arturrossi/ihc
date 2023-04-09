@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar'
 import AvailableTickets from '@/components/AvailableTickets'
 import { StarIcon, CheckBadgeIcon } from '@heroicons/react/24/solid'
 import BackHeader from "@/components/BackHeader"
+import Image from "next/image"
 
 export default function EventPage() {
     const router = useRouter()
@@ -40,7 +41,7 @@ export default function EventPage() {
                                 {seller.verified &&
                                     <label className="text-xs text-purple-900 font-semibold mb-2">Perfil verificado</label>
                                 }
-                                <img src={seller.photo} className='rounded-full w-36 h-36'></img>
+                                <Image alt={seller.bio} src={seller.photo} className='rounded-full w-36 h-36'/>
                             </div>
                             {seller.phone &&
                                 <div>
