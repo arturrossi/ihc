@@ -10,7 +10,7 @@ export default function TicketsPage() {
     const [boughtTickets, setBoughtTickets] = useState([])
 
     const router = useRouter()
-    
+
     useEffect(() => {
         setBoughtTickets(JSON.parse(localStorage.getItem('boughtTickets') ?? '[]'))
     }, [])
@@ -28,7 +28,7 @@ export default function TicketsPage() {
                     <div className='bg-white p-8 xl:px-24 flex flex-col space-y-6'>
                         <label className="font-bold text-2xl text-purple-900">Ingressos comprados</label>
                         {boughtTickets.map((boughtTicket: any) =>
-                            <div className="border-b space-y-4">
+                            <div key={boughtTicket.id} className="border-b space-y-4">
                                 <label className="font-bold text-2xl text-purple-900">Dados do evento</label>
                                 <div className="flex flex-col">
                                     <label className="text-sm text-gray-500 font-semibold">Evento</label>

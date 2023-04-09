@@ -4,6 +4,7 @@ export const sellers = [
     {
         id: 1,
         name: 'Payton Wunsch',
+        phone: faker.phone.number('+55 51 9####-####'),
         reviewStars: 5,
         reviews: [
             {
@@ -25,6 +26,7 @@ export const sellers = [
     {
         id: 2,
         name: 'Katherine Treutel',
+        phone: faker.phone.number('+55 51 9####-####'),
         reviewStars: 4,
         photo: faker.image.people(),
         bio: 'Vendo muitos ingressos',
@@ -34,6 +36,7 @@ export const sellers = [
     {
         id: 3,
         name: 'Weston McDermott',
+        phone: faker.phone.number('+55 51 9####-####'),
         reviewStars: 4,
         photo: faker.image.people(),
         bio: 'Vendo ingressos',
@@ -61,6 +64,7 @@ export const sellers = [
     {
         id: 6,
         name: 'Domenica Langworth',
+        phone: faker.phone.number('+55 51 9####-####'),
         reviewStars: 5,
         photo: faker.image.people(),
         bio: 'Vendo muitos ingressos',

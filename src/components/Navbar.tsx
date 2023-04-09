@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className='xl:hidden fixed bottom-0 bg-white w-full border border-gray-200'>
             <div className='p-6 w-full flex space-x-2'>
                 {items.map(item => (
-                    <div onClick={() => router.push(item.href)} className='text-xs w-full flex flex-col items-center'>
+                    <div key={item.name} onClick={() => router.push(item.href)} className='text-xs w-full flex flex-col items-center'>
                         <div className='h-6 w-6 text-purple-900'>
                             {item.icon}
                         </div>

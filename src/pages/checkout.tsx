@@ -69,7 +69,7 @@ export default function CheckoutPage() {
                     <div className='bg-white p-8 xl:px-24 flex flex-col space-y-6'>
                         <label className="font-bold text-2xl text-purple-900">Ingressos escolhidos</label>
                         {allTickets.map(ticket => (
-                            <div className="flex flex-col space-y-2 border-separate border-b pb-4">
+                            <div key={ticket.id} className="flex flex-col space-y-2 border-separate border-b pb-4">
                                 <div className="flex flex-col">
                                     <label className="text-sm text-gray-500 font-semibold">Setor</label>
                                     <label className="font-semibold text-gray-800 capitalize">{ticket.sector}</label>

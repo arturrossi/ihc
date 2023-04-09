@@ -51,13 +51,13 @@ export default function AvailableTickets({ eventId }: { eventId: number }) {
 
     return (
         <div>
-            {Object.keys(groupedData).map(key =>
-                <div className="my-4 text-black flex flex-col">
+            {Object.keys(groupedData).map((key) =>
+                <div key={key} className="my-4 text-black flex flex-col">
                     <label className="text-gray-500">Setor</label>
                     <label className="capitalize text-black text-lg font-semibold mb-2">{key}</label>
                     <div className="flex flex-col space-y-4 xl:flex-row xl:space-x-16">
                         {groupedData[key].map((ticket: any) => (
-                            <div className="p-4 border w-full rounded-xl flex flex-col space-y-2 xl:space-y-0">
+                            <div key={ticket.id} className="p-4 border w-full rounded-xl flex flex-col space-y-2 xl:space-y-0">
                                 <div>
                                     <div className="flex mb-2">
                                         <label className="mr-auto font-semibold text-gray-400 text-sm">Vendedor</label>

@@ -42,6 +42,12 @@ export default function EventPage() {
                                 }
                                 <img src={seller.photo} className='rounded-full w-36 h-36'></img>
                             </div>
+                            {seller.phone &&
+                                <div>
+                                    <label className="text-gray-800 font-semibold">Telefone</label>
+                                    <p className="text-gray-500 mt-1">{seller.phone}</p>
+                                </div>
+                            }
                             <div>
                                 <label className="text-gray-800 font-semibold">Biografia</label>
                                 <p className="text-gray-500 mt-1">{seller.bio}</p>
