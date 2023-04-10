@@ -67,13 +67,13 @@ export default function AvailableTickets({ eventId }: { eventId: number }) {
                                             Ver detalhes
                                         </label> */}
                                     </div>
-                                    <div className="flex">
+                                   {/*  <div className="flex">
                                         <label>{ticket.seller.name}</label>
                                         <div className="ml-auto flex items-center">
                                             <StarIcon className="w-6 h-6 text-yellow-500 mr-2" />
                                             {ticket.seller.reviewStars}
                                         </div>
-                                    </div>
+                                    </div>*/}
                                 </div>
                                 <div>
                                     <label className="font-semibold text-gray-400 text-sm">Preço</label>
