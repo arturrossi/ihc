@@ -41,7 +41,7 @@ export default function EventPage() {
                                 {seller.verified &&
                                     <label className="text-xs text-purple-900 font-semibold mb-2">Perfil verificado</label>
                                 }
-                                <Image alt={seller.bio} src={seller.photo} className='rounded-full w-36 h-36'/>
+                                <img alt={seller.bio} src={seller.photo} className='rounded-full w-36 h-36'/>
                             </div>
                             {seller.phone &&
                                 <div>
