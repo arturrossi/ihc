@@ -7,20 +7,20 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 
 export default function CheckoutPage() {
-    const [showContent, setShowContent] = useState(false);
+    const [showContent, setShowContent] = useState(true);
 
     const router = useRouter()
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowContent(true);
-        }, 6000); // 6 seconds in milliseconds
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         setShowContent(true);
+    //     }, 6000); // 6 seconds in milliseconds
 
-        // Clean up the timer on component unmount
-        return () => {
-            clearTimeout(timer);
-        };
-    }, []);
+    //     // Clean up the timer on component unmount
+    //     return () => {
+    //         clearTimeout(timer);
+    //     };
+    // }, []);
 
     if (!router.query.tickets || !router.query.eventId) {
         return (

@@ -5,20 +5,20 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react";
 
 export default function SuccessPage() {
-    const [showContent, setShowContent] = useState(false);
+    const [showContent, setShowContent] = useState(true);
 
     const router = useRouter()
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowContent(true);
-        }, 50); // 6 seconds in milliseconds
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         setShowContent(true);
+    //     }, 50); // 6 seconds in milliseconds
 
-        // Clean up the timer on component unmount
-        return () => {
-            clearTimeout(timer);
-        };
-    }, []);
+    //     // Clean up the timer on component unmount
+    //     return () => {
+    //         clearTimeout(timer);
+    //     };
+    // }, []);
 
     return (
         <>

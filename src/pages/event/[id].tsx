@@ -10,23 +10,23 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 
 export default function EventPage() {
-    const [showContent, setShowContent] = useState(false);
+    const [showContent, setShowContent] = useState(true);
 
     const router = useRouter()
     const { id } = router.query
 
     const event = popularEvents.find(event => event.id.toString() === id)
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowContent(true);
-        }, 6000); // 6 seconds in milliseconds
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         setShowContent(true);
+    //     }, 6000); // 6 seconds in milliseconds
 
-        // Clean up the timer on component unmount
-        return () => {
-            clearTimeout(timer);
-        };
-    }, []);
+    //     // Clean up the timer on component unmount
+    //     return () => {
+    //         clearTimeout(timer);
+    //     };
+    // }, []);
 
      if (!event) {
         return <>Evento não encontrado</>
