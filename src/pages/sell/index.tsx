@@ -15,10 +15,10 @@ export default function Home() {
     const fields = ['name', 'email', 'phone', 'about', 'event', 'price', 'sector', 'file-upload']
 
     const validateFields = () => {
-        if(!!fields.some(field => {
-           let input = document.getElementById(field) as HTMLInputElement
+        if (!!fields.some(field => {
+            let input = document.getElementById(field) as HTMLInputElement
 
-           return !input.value
+            return !input.value
         })) return setShowError(true)
 
         router.push('/sell/success')
@@ -230,6 +230,7 @@ export default function Home() {
                         </div>
 
                         <div className="pt-5">
+                            {showError && <p className='mb-4 text-red-500'>Todos os campos são obrigatórios!</p>}
                             <div className="flex justify-end">
                                 <button
                                     onClick={goBack}
@@ -246,7 +247,6 @@ export default function Home() {
                                     Salvar
                                 </button>
                             </div>
-                            {showError && <p className='text-red-500'>Todos os campos são obrigatórios!</p>}
                         </div>
                     </form>
                 </div>
